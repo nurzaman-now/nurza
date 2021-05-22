@@ -21,7 +21,7 @@ $(window).scroll(function() {
         });
     }
     // portfolio
-    if(wScroll > 700) {
+    if(wScroll > 550) {
     $('.portfolio .thumbnail').each(function(i){
             setTimeout(function() {
                 $('.portfolio .thumbnail').eq(i).addClass('muncul');      
