@@ -1,0 +1,73 @@
+@media only screen and (max-width: 2000px) {
+    #header{
+        background-image: url(../img/header.jpg); 
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 -200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image: url(../img/header.jpg); 
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 550px 0px;
+    }
+}
+
+.jumbotron {
+    overflow: hidden;
+}
+.jumbotron h3, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+#link{
+    margin: 5px;
+}
+
+.sosmed{
+    position: absolute fixed;
+    width: 15px; 
+    margin-bottom: 3px; 
+    margin-right: 2px;
+}
+.line{
+    height: 5px;
+    width: 200px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.profil{
+    background-color: #ffffff;
+}
+
+.profil .bio {
+    opacity: 0;
+    transform: translate(-40px, 0);
+    transition: .5s;
+}
+
+.profil .bio.keluar{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portfolio{
+    background-color: rgb(253, 243, 215);
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.portfolio .thumbnail.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.card{
+    margin-bottom: 20px;
+}
