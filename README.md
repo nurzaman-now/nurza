@@ -1,2 +1,2 @@
-# nurz.github.io
+# Iman Nurzaman
 my portfolio
