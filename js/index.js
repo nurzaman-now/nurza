@@ -13,7 +13,7 @@ $(window).scroll(function() {
     });
 
     // profil
-    if(wScroll > 200) {
+    if(wScroll > 150) {
         $('.profil .bio').each(function(h){
             setTimeout(function() {
                 $('.profil .bio').eq(h).addClass('keluar');      
@@ -21,7 +21,7 @@ $(window).scroll(function() {
         });
     }
     // portfolio
-    if(wScroll > 600) {
+    if(wScroll > 700) {
     $('.portfolio .thumbnail').each(function(i){
             setTimeout(function() {
                 $('.portfolio .thumbnail').eq(i).addClass('muncul');      
