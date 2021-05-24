@@ -37,9 +37,11 @@
 }
 .line{
     height: 5px;
-    width: 200px;
+    width: 120px;
     background-color: black;
+    margin-top: -15px;
     margin-bottom: 20px;
+    border-radius: 50px;
 }
 
 .profil{
