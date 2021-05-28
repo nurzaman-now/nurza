@@ -2,13 +2,13 @@
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
-    $('.jumbotron img').css({
+    $('.inner-header img').css({
         'transform' : 'translate(0px, '+ wScroll/3 +'%)'
     });
-    $('.jumbotron h3').css({
+    $('.inner-header h3').css({
         'transform' : 'translate(0px, '+ wScroll/2 +'%)'
     });
-    $('.jumbotron p').css({
+    $('.inner-header p').css({
         'transform' : 'translate(0px, '+ wScroll +'%)'
     });
 
@@ -31,3 +31,6 @@ $(window).scroll(function() {
 
 });
 
+$(document).ready(function(){
+    $(".preloader").delay(1000).fadeOut();
+})

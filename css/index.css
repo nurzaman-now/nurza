@@ -1,30 +1,109 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
 @media only screen and (max-width: 2000px) {
-    #header{
-        background-image: url(../img/header.jpg); 
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: 0 -200px;
-    }
+  .header {
+    position:relative;
+    text-align:center;
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -4cm;
+    color:white;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .header {
+    position:relative;
+    text-align:center;
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-size: 105vh;
+    background-position-x: -40vh;
+    background-position-y: 60vh;
+    color:white;
+  }
+  .inner-header img {
+    width: 150px;
+  }
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
 }
 
-@media only screen and (max-width: 1080px) {
-    #header{
-        background-image: url(../img/header.jpg); 
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: 550px 0px;
-    }
-    .jumbotron img{
-        width: 160px;
-    }
+.inner-header {
+  height:55vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 
-.jumbotron {
-    overflow: hidden;
+.inner-header h3, .inner-header p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
-.jumbotron h3, .jumbotron p {
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  z-index: 1;
 }
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
 #link{
     margin: 5px;
 }
@@ -76,3 +155,20 @@
 .card{
     margin-bottom: 20px;
 }
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #1e1a33;
+    color: #fff;
+  }
+  .preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 20px arial;
+  }
