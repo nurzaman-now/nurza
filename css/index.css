@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-position-y: -4cm;
     color:white;
+    padding-top: 50px;
   }
 }
 @media only screen and (max-width: 1090px) {
@@ -21,21 +22,16 @@ body {
     text-align:center;
     background-image: url(../img/header.jpg);
     background-attachment: fixed;
-    background-size: 105vh;
-    background-position-x: -40vh;
-    background-position-y: 59vh;
+    background-size: 110vh;
+    background-position-x: -43.5vh;
+    background-position-y: 62vh;
     color:white;
+    padding-top: 20px;
   }
   .inner-header img {
     width: 150px;
+    margin-top: 50px;
   }
-}
-.logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
 }
 
 .inner-header {
@@ -49,6 +45,8 @@ body {
 
 .inner-header h3, .inner-header p {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .waves {
