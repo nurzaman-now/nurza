@@ -3,7 +3,7 @@ $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
 
     $('.inner-header img').css({
-        'transform' : 'translate(0px, '+ wScroll/3 +'%)'
+        'transform' : 'translate(0px, '+ wScroll/2.5 +'%)'
     });
     $('.inner-header h3').css({
         'transform' : 'translate(0px, '+ wScroll/2 +'%)'
